@@ -1,0 +1,26 @@
+{
+    "nameOrig": {
+        "num_unique_entities": 6353307,
+        "entities_with_1_tx": 6344009,
+        "entities_with_2_to_5_tx": 9298,
+        "entities_with_6_to_10_tx": 0,
+        "entities_with_gt_10_tx": 0,
+        "average_tx_per_entity": 1.0015,
+        "median_tx_per_entity": 1.0,
+        "pct_entities_with_usable_history": 0.1463,
+        "pct_fraud_tx_associated_with_history_entities": 0.3409,
+        "pct_fraud_tx_associated_with_cold_start_entities": 99.6591
+    },
+    "nameDest": {
+        "num_unique_entities": 2722362,
+        "entities_with_1_tx": 2262704,
+        "entities_with_2_to_5_tx": 216279,
+        "entities_with_6_to_10_tx": 113093,
+        "entities_with_gt_10_tx": 130286,
+        "average_tx_per_entity": 2.3372,
+        "median_tx_per_entity": 1.0,
+        "pct_entities_with_usable_history": 16.8845,
+        "pct_fraud_tx_associated_with_history_entities": 67.454,
+        "pct_fraud_tx_associated_with_cold_start_entities": 32.546
+    }
+}

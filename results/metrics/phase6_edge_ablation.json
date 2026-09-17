@@ -1,0 +1,124 @@
+{
+    "metadata": {
+        "test_transactions": 58969,
+        "test_fraud": 2592,
+        "epochs": 100,
+        "seed": 42
+    },
+    "A_Transaction_Only": {
+        "features_used": 9,
+        "feature_names": [
+            "amount",
+            "oldbalanceOrg",
+            "newbalanceOrig",
+            "oldbalanceDest",
+            "newbalanceDest",
+            "type_CASH_OUT",
+            "type_DEBIT",
+            "type_PAYMENT",
+            "type_TRANSFER"
+        ],
+        "metrics": {
+            "pr_auc": 0.8160662681019651,
+            "roc_auc": 0.9663837888809397,
+            "precision": 0.2984838497033619,
+            "recall": 0.8734567901234568,
+            "f1": 0.4449248305001474,
+            "tp": 2264,
+            "fp": 5321,
+            "tn": 51056,
+            "fn": 328
+        }
+    },
+    "B_Transaction_Behavior": {
+        "features_used": 15,
+        "feature_names": [
+            "amount",
+            "oldbalanceOrg",
+            "newbalanceOrig",
+            "oldbalanceDest",
+            "newbalanceDest",
+            "type_CASH_OUT",
+            "type_DEBIT",
+            "type_PAYMENT",
+            "type_TRANSFER",
+            "origin_history_count",
+            "destination_history_count",
+            "origin_history_avg_amount",
+            "destination_history_avg_amount",
+            "origin_history_available",
+            "destination_history_available"
+        ],
+        "metrics": {
+            "pr_auc": 0.8140855535424899,
+            "roc_auc": 0.9688714268054766,
+            "precision": 0.2627157129881926,
+            "recall": 0.8927469135802469,
+            "f1": 0.40596491228070175,
+            "tp": 2314,
+            "fp": 6494,
+            "tn": 49883,
+            "fn": 278
+        }
+    },
+    "C_Transaction_Mutation": {
+        "features_used": 11,
+        "feature_names": [
+            "amount",
+            "oldbalanceOrg",
+            "newbalanceOrig",
+            "oldbalanceDest",
+            "newbalanceDest",
+            "type_CASH_OUT",
+            "type_DEBIT",
+            "type_PAYMENT",
+            "type_TRANSFER",
+            "origin_mutation",
+            "destination_mutation"
+        ],
+        "metrics": {
+            "pr_auc": 0.815084572851011,
+            "roc_auc": 0.9694819653547099,
+            "precision": 0.2920035938903863,
+            "recall": 0.8777006172839507,
+            "f1": 0.4382163151305018,
+            "tp": 2275,
+            "fp": 5516,
+            "tn": 50861,
+            "fn": 317
+        }
+    },
+    "D_Transaction_Behavior_Mutation": {
+        "features_used": 17,
+        "feature_names": [
+            "amount",
+            "oldbalanceOrg",
+            "newbalanceOrig",
+            "oldbalanceDest",
+            "newbalanceDest",
+            "type_CASH_OUT",
+            "type_DEBIT",
+            "type_PAYMENT",
+            "type_TRANSFER",
+            "origin_history_count",
+            "destination_history_count",
+            "origin_history_avg_amount",
+            "destination_history_avg_amount",
+            "origin_history_available",
+            "destination_history_available",
+            "origin_mutation",
+            "destination_mutation"
+        ],
+        "metrics": {
+            "pr_auc": 0.80041794865303,
+            "roc_auc": 0.9673234471767117,
+            "precision": 0.2553811659192825,
+            "recall": 0.878858024691358,
+            "f1": 0.3957609451007644,
+            "tp": 2278,
+            "fp": 6642,
+            "tn": 49735,
+            "fn": 314
+        }
+    }
+}

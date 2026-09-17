@@ -1,0 +1,121 @@
+{
+    "overall": {
+        "total_transactions": 1219678,
+        "total_fraud": 8213,
+        "fraud_rate": 0.006733744480100485,
+        "cold_start_count": 1218470,
+        "cold_start_rate": 0.9990095746582295,
+        "cold_start_fraud_count": 8212,
+        "cold_start_fraud_rate_of_all_fraud": 0.9998782418117619,
+        "cold_start_breakdown": {
+            "dest_hist_available": 507835,
+            "dest_hist_unavailable": 710635,
+            "dest_mut_available": 507835,
+            "dest_mut_unavailable": 710635
+        },
+        "cold_start_dest_depth": {
+            "mean": 5.740210895271102,
+            "median": 3.0,
+            "min": 1.0,
+            "max": 112.0,
+            "p25": 1.0,
+            "p75": 7.0,
+            "p90": 15.0
+        },
+        "comparison": {
+            "with_dest_history": {
+                "tx_count": 507835,
+                "fraud_count": 1625,
+                "fraud_rate": 0.0031998582216664863,
+                "mean_depth": 5.740210895271102
+            },
+            "without_dest_history": {
+                "tx_count": 710635,
+                "fraud_count": 6587,
+                "fraud_rate": 0.009269174752158282,
+                "mean_depth": 0.0
+            }
+        }
+    },
+    "train": {
+        "total_transactions": 1160709,
+        "total_fraud": 5621,
+        "fraud_rate": 0.004842729745353917,
+        "cold_start_count": 1159599,
+        "cold_start_rate": 0.9990436879527944,
+        "cold_start_fraud_count": 5620,
+        "cold_start_fraud_rate_of_all_fraud": 0.9998220957125067,
+        "cold_start_breakdown": {
+            "dest_hist_available": 484423,
+            "dest_hist_unavailable": 675176,
+            "dest_mut_available": 484423,
+            "dest_mut_unavailable": 675176
+        },
+        "cold_start_dest_depth": {
+            "mean": 5.741032114494977,
+            "median": 3.0,
+            "min": 1.0,
+            "max": 112.0,
+            "p25": 1.0,
+            "p75": 7.0,
+            "p90": 15.0
+        },
+        "comparison": {
+            "with_dest_history": {
+                "tx_count": 484423,
+                "fraud_count": 1104,
+                "fraud_rate": 0.0022789999649067035,
+                "mean_depth": 5.741032114494977
+            },
+            "without_dest_history": {
+                "tx_count": 675176,
+                "fraud_count": 4516,
+                "fraud_rate": 0.006688626372975343,
+                "mean_depth": 0.0
+            }
+        }
+    },
+    "test": {
+        "total_transactions": 58969,
+        "total_fraud": 2592,
+        "fraud_rate": 0.04395529854669403,
+        "cold_start_count": 58871,
+        "cold_start_rate": 0.9983381098543302,
+        "cold_start_fraud_count": 2592,
+        "cold_start_fraud_rate_of_all_fraud": 1.0,
+        "cold_start_breakdown": {
+            "dest_hist_available": 23412,
+            "dest_hist_unavailable": 35459,
+            "dest_mut_available": 23412,
+            "dest_mut_unavailable": 35459
+        },
+        "cold_start_dest_depth": {
+            "mean": 5.723218862121989,
+            "median": 3.0,
+            "min": 1.0,
+            "max": 90.0,
+            "p25": 1.0,
+            "p75": 7.0,
+            "p90": 15.0
+        },
+        "comparison": {
+            "with_dest_history": {
+                "tx_count": 23412,
+                "fraud_count": 521,
+                "fraud_rate": 0.022253545190500598,
+                "mean_depth": 5.723218862121989
+            },
+            "without_dest_history": {
+                "tx_count": 35459,
+                "fraud_count": 2071,
+                "fraud_rate": 0.05840548238811021,
+                "mean_depth": 0.0
+            }
+        }
+    },
+    "boundary_check": {
+        "test_edges_with_history": 23438,
+        "test_edges_total": 58969,
+        "cross_boundary_success": true
+    }
+}

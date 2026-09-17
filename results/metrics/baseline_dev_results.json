@@ -1,0 +1,196 @@
+{
+    "metadata": {
+        "train_rows": 1160709,
+        "test_rows": 58969,
+        "total_fraud": 8213
+    },
+    "coverage": {
+        "originator_history_coverage": 0.000990425341770533,
+        "destination_history_coverage": 0.4167058846679205,
+        "origin_mutation_coverage": 0.000990425341770533,
+        "destination_mutation_coverage": 0.4167058846679205,
+        "fraud_coverage_orig": 0.00012175818823815901,
+        "fraud_coverage_dest": 0.19785705588700842,
+        "cold_start_coverage": 0.9990095746582295
+    },
+    "results": {
+        "A": {
+            "features": [
+                "amount",
+                "type_CASH_OUT",
+                "type_DEBIT",
+                "type_PAYMENT",
+                "type_TRANSFER"
+            ],
+            "overall": {
+                "precision": 0.2207647843485994,
+                "recall": 0.7662037037037037,
+                "f1": 0.34276838108387986,
+                "roc_auc": 0.9156711126231978,
+                "pr_auc": 0.4816042786073529,
+                "fpr": 0.12434148677652235,
+                "fnr": 0.2337962962962963
+            },
+            "cold_start": {
+                "precision": 0.22103505843071786,
+                "recall": 0.7662037037037037,
+                "f1": 0.34309406582016067,
+                "roc_auc": 0.9156736738085539,
+                "pr_auc": 0.4818762459844089,
+                "fpr": 0.12436255086266636,
+                "fnr": 0.2337962962962963
+            }
+        },
+        "B": {
+            "features": [
+                "amount",
+                "type_CASH_OUT",
+                "type_DEBIT",
+                "type_PAYMENT",
+                "type_TRANSFER",
+                "origin_history_count",
+                "origin_history_avg_amount",
+                "destination_history_count",
+                "destination_history_avg_amount"
+            ],
+            "overall": {
+                "precision": 0.257750326642119,
+                "recall": 0.8371913580246914,
+                "f1": 0.3941513032422123,
+                "roc_auc": 0.9524875777038486,
+                "pr_auc": 0.6121224416303404,
+                "fpr": 0.11084307430335066,
+                "fnr": 0.16280864197530864
+            },
+            "cold_start": {
+                "precision": 0.257750326642119,
+                "recall": 0.8371913580246914,
+                "f1": 0.3941513032422123,
+                "roc_auc": 0.9524050282499076,
+                "pr_auc": 0.6121225001027396,
+                "fpr": 0.11103608806126619,
+                "fnr": 0.16280864197530864
+            }
+        },
+        "C": {
+            "features": [
+                "amount",
+                "type_CASH_OUT",
+                "type_DEBIT",
+                "type_PAYMENT",
+                "type_TRANSFER",
+                "origin_mutation"
+            ],
+            "overall": {
+                "precision": 0.21619006665233284,
+                "recall": 0.7758487654320988,
+                "f1": 0.3381536909366067,
+                "roc_auc": 0.917687137019803,
+                "pr_auc": 0.4891708258505295,
+                "fpr": 0.12932578888553842,
+                "fnr": 0.22415123456790123
+            },
+            "cold_start": {
+                "precision": 0.21619006665233284,
+                "recall": 0.7758487654320988,
+                "f1": 0.3381536909366067,
+                "roc_auc": 0.9175438036170761,
+                "pr_auc": 0.4891708258505295,
+                "fpr": 0.12955098704667817,
+                "fnr": 0.22415123456790123
+            }
+        },
+        "D": {
+            "features": [
+                "amount",
+                "type_CASH_OUT",
+                "type_DEBIT",
+                "type_PAYMENT",
+                "type_TRANSFER",
+                "destination_mutation"
+            ],
+            "overall": {
+                "precision": 0.2778872684272763,
+                "recall": 0.8159722222222222,
+                "f1": 0.4145839458982652,
+                "roc_auc": 0.9487324653780316,
+                "pr_auc": 0.5985411418194675,
+                "fpr": 0.09748656366958157,
+                "fnr": 0.1840277777777778
+            },
+            "cold_start": {
+                "precision": 0.27854602923745553,
+                "recall": 0.8159722222222222,
+                "f1": 0.41531664212076586,
+                "roc_auc": 0.9487804497335695,
+                "pr_auc": 0.5991667644857278,
+                "fpr": 0.09733648430142681,
+                "fnr": 0.1840277777777778
+            }
+        },
+        "E": {
+            "features": [
+                "amount",
+                "type_CASH_OUT",
+                "type_DEBIT",
+                "type_PAYMENT",
+                "type_TRANSFER",
+                "origin_mutation",
+                "destination_mutation"
+            ],
+            "overall": {
+                "precision": 0.2843531937734836,
+                "recall": 0.8175154320987654,
+                "f1": 0.42194344882516926,
+                "roc_auc": 0.9497363716203329,
+                "pr_auc": 0.6063867699245895,
+                "fpr": 0.09459531369175372,
+                "fnr": 0.18248456790123457
+            },
+            "cold_start": {
+                "precision": 0.2843531937734836,
+                "recall": 0.8175154320987654,
+                "f1": 0.42194344882516926,
+                "roc_auc": 0.9496488463341478,
+                "pr_auc": 0.6063867699245896,
+                "fpr": 0.09476003482648945,
+                "fnr": 0.18248456790123457
+            }
+        },
+        "F": {
+            "features": [
+                "amount",
+                "type_CASH_OUT",
+                "type_DEBIT",
+                "type_PAYMENT",
+                "type_TRANSFER",
+                "origin_history_count",
+                "origin_history_avg_amount",
+                "destination_history_count",
+                "destination_history_avg_amount",
+                "origin_mutation",
+                "destination_mutation",
+                "origin_history_available",
+                "destination_history_available"
+            ],
+            "overall": {
+                "precision": 0.2779078844652615,
+                "recall": 0.8240740740740741,
+                "f1": 0.4156450671336836,
+                "roc_auc": 0.952155450344539,
+                "pr_auc": 0.6073812797058482,
+                "fpr": 0.09844440108554907,
+                "fnr": 0.17592592592592593
+            },
+            "cold_start": {
+                "precision": 0.2779078844652615,
+                "recall": 0.8240740740740741,
+                "f1": 0.4156450671336836,
+                "roc_auc": 0.9520722334318067,
+                "pr_auc": 0.6073813111657299,
+                "fpr": 0.09861582473036123,
+                "fnr": 0.17592592592592593
+            }
+        }
+    }
+}

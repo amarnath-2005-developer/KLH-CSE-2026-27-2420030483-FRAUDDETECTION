@@ -1,0 +1,14 @@
+# Data files
+data/
+*.parquet
+*.npz
+*.csv
+*.pt
+
+# Python caches
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/

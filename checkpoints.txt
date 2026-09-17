@@ -1,0 +1,19 @@
+Checkpoint 1
+After Phase 1:
+Can we reliably load and understand the dataset?
+
+Checkpoint 2
+After Phase 3:
+Does Behavioral Mutation actually show meaningful differences between normal and suspicious behavior?
+
+Checkpoint 3
+After Phase 4:
+Does adding FraudDNA provide measurable information over ordinary features?
+
+Checkpoint 4
+After Phase 7:
+Does putting FraudDNA into the graph model provide a useful experimental result?
+
+Checkpoint 5
+After Phase 11:
+Are the results reproducible and leakage-free?

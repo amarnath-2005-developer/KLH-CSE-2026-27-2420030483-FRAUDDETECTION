@@ -1,0 +1,9 @@
+{
+    "pythonVersion": "3.13",
+    "include": ["."],
+    "exclude": ["data", "results", "__pycache__"],
+    "extraPaths": ["."],
+    "venvPath": ".",
+    "reportMissingImports": "warning",
+    "reportMissingModuleSource": "none"
+}
